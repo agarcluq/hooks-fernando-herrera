@@ -10,6 +10,10 @@ const increment = () => {
 const decrement = () => {
   setState(state - 1)
 }
-
+return {
+  state,
+  increment,
+  decrement
+}
 }
 export default useCounter;
