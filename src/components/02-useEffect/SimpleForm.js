@@ -31,7 +31,14 @@ const handleInputChange = ({target}) => {
       autoComplete="off"
       value={name}
       onChange = {handleInputChange}
-
+      />
+      <input
+      type="text"
+      name="email"
+      placeholder="tu email"
+      autoComplete="off"
+      value={email}
+      onChange = {handleInputChange}
       />
       </form>
 
