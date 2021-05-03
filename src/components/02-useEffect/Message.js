@@ -1,13 +1,9 @@
-import React,{useEffect,useState} from "react";
+import React from "react";
 
 
 const Message = () => {
 
-  return (
-    <>
-      <p>eres genial</p>
+  return  <p>eres genial</p>
 
-    </>  
-  )
 }
 export default Message;
