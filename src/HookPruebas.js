@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./style.css";
 
-export default function App() {
+export default function HookPruebas() {
   const [counter,setCounter]= useState(0)
   const handleClick = () => {
         setCounter(counter+1)
