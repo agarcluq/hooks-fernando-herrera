@@ -8,7 +8,11 @@ const [{counter1,counter2},setCounter] =useState({
   counter2:20
 });
 
-const incrementCounter = ()=> setCounter(counter1+1);
+const incrementCounter = ()=> {
+  setCounter({counter1:counter1+1,counter2:counter2})
+   
+
+}
 
 
   return (
