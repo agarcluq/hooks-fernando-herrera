@@ -44,8 +44,8 @@ const handleInputChange = ({target}) => {
       value={email}
       onChange = {handleInputChange}
       />
-      {name ===123 && <Message/>}
       </form>
+      {email ===123 && <Message/>}
 
     </>  
   )
