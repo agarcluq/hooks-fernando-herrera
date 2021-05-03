@@ -1,14 +1,7 @@
 import React,{useState} from "react";
 
+export default function counterWithCustomHook() {
 
-
-export default function CounterApp() {
-const [state,setState] =useState({
-  counter1:10,
-  counter2:20,
-  counter3:30,
-  counter4:20
-});
 
 const {counter1,counter2,counter4}=state;
 
