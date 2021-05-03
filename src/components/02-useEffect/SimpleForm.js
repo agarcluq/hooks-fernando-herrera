@@ -9,7 +9,7 @@ const SimpleForm = () => {
   const {name,email} = formState;
 useEffect ( () =>{
   console.log('hola')
-})
+},[])
 const handleInputChange = ({target}) => {
   console.log(e.target.name)
   console.log(e.target.value)
