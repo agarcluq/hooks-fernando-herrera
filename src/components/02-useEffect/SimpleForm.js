@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from "react";
-import useCounter from "../../hooks/useCounter"
+import Message from "./Message"
 
 const SimpleForm = () => {
   const [formState,setFormState] = useState({
@@ -44,6 +44,7 @@ const handleInputChange = ({target}) => {
       value={email}
       onChange = {handleInputChange}
       />
+      {name ===123 && <Message/>}
       </form>
 
     </>  
