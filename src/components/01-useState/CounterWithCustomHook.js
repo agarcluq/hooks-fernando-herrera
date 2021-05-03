@@ -1,12 +1,14 @@
 import React from "react";
+import useCounter from "../../hooks/useCounter"
 
 const CounterWithCustomHook = () => {
+  const {state,increment,decrement} = useCounter();
   return (
     <>
-      <h1>Contador con Hooks: {0}</h1>
+      <h1>Contador con Hooks: {state}</h1>
       <hr/>
-      <button> +1</button>
-      <button> -1</button>
+      <button onClick ={increment}> +1</button>
+      <button onClick ={decrement}> -1</button>
     </>  
   )
 }
