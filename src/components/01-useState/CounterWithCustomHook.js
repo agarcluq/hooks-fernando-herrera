@@ -7,8 +7,8 @@ const CounterWithCustomHook = () => {
     <>
       <h1>Contador con Hooks: {state}</h1>
       <hr/>
-      <button onClick ={increment}> +1</button>
-      <button onClick ={decrement}> -1</button>
+      <button onClick ={()=>increment(2)}> +1</button>
+      <button onClick ={()=>decrement(2)}> -1</button>
     </>  
   )
 }
