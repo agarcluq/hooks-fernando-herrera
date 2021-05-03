@@ -7,12 +7,16 @@ const SimpleForm = () => {
     email: ''
   })
   const {name,email} = formState;
+
 useEffect ( () =>{
   console.log('hola')
 },[])
+
+useEffect ( () =>{
+  console.log('email cambio')
+},[email])
+
 const handleInputChange = ({target}) => {
-  console.log(e.target.name)
-  console.log(e.target.value)
   setFormState({
     ...formState,
     [target.name]: target.value
