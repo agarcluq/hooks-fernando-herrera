@@ -5,10 +5,10 @@ import ShowIncrement  from './ShowIncrement';
 const CallbackHook = () => {
 
     const [counter, setCounter] = useState( 10 );
-
-    // const increment = () => {
-    //     setCounter( counter + 1 );
-    // }
+// //Es un objeto, que apunta a un lugar de memoria por tanto cada vez que dispara almacena un espacio distinto
+//     const increment = () => {
+//         setCounter( counter + 1 );
+//     }
 
     const increment = useCallback( (num) => {
         setCounter( c => c + num );
