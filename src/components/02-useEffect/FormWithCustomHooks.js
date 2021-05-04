@@ -19,19 +19,13 @@ useEffect(()=>{
 const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log( formValues );
+    console.log( formValues.email );
     
 }
 
   return (
     <>
       <h1>FormWithCustomHooks</h1>
-      <div>
-      {formValues.map((item,i)=>(
-        <p key={i} item={item}>{item}</p>
-      )
-      )}
-      </div>
       <hr/>
       <form onSubmit={ handleSubmit }>
         <input 
@@ -63,7 +57,9 @@ const handleSubmit = (e) => {
 
         <button type="submit">Click</button>
     </form>
-
+      <p>Nombre: {formValues.name}</p>
+      <p>Email: {formValues.email}</p>
+      <p>Pwd: {formValues.password}</p>
 
     </>  
   )
