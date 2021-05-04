@@ -1,7 +1,9 @@
 import React from "react";
 import "./style.css";
 // import CounterWithCustomHook from "./components/01-useState/CounterWithCustomHook";
-import FormWithCustomHooks from "./components/02-useEffect/FormWithCustomHooks"
+// import FormWithCustomHooks from "./components/02-useEffect/FormWithCustomHooks"
+
+import MultipleCustomHooks from "./components/03-examples/MultipleCustomHooks"
 export default function App() {
 
   return (
@@ -9,7 +11,8 @@ export default function App() {
       {/* <CounterApp/> */}
       {/* <CounterWithCustomHook/> */}
       {/* <SimpleForm/> */}
-      <FormWithCustomHooks/>
+      {/* <FormWithCustomHooks/> */}
+      <MultipleCustomHooks/>
     </div>  
   );
 }
