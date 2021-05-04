@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-export const FocusScreen = () => {
+const FocusScreen = () => {
 
     const inputRef = useRef();
     // console.log(ref);
@@ -32,3 +32,4 @@ export const FocusScreen = () => {
         </div>
     )
 }
+export default FocusScreen;
