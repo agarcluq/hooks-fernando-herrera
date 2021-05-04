@@ -5,9 +5,12 @@ import "./style.css";
 
 // import MultipleCustomHooks from "./components/03-examples/MultipleCustomHooks"
 
-import MemoHook from "./components/05-useMemo/MemoHook"
+// import MemoHook from "./components/05-useMemo/MemoHook"
 
 // import FocusScreen from "./components/04-useRef/FocusScreen"
+
+import CallbackHook from "./components/05-useMemo/CallbackHook"
+
 export default function App() {
   return (
     <div>
@@ -17,7 +20,8 @@ export default function App() {
       {/* <FormWithCustomHooks/> */}
       {/* <MultipleCustomHooks/> */}
       {/* <FocusScreen/> */}
-      <MemoHook/>
+      {/* <MemoHook/> */}
+      <CallbackHook/>
     </div>  
   );
 }
