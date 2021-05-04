@@ -1,11 +1,11 @@
 import {useState} from 'react'
 
-const useForm = (initialState = 10) =>{
-const [values,setValues] = useState(initialState = {})
+const useForm = (initialState = {}) =>{
+const [values,setValues] = useState(initialState)
 
 
   const handleInputChange = ({target}) => { 
-    setFormState({
+    setValues({
     ...values,
     [target.name]: target.value  
     })
