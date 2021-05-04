@@ -4,7 +4,7 @@ import  procesoPesado  from '../../helpers/procesoPesado';
 
 const MemoHook = () => {
 
-    const { counter, increment } =  useCounter( 5000 );
+    const { counter, increment } =  useCounter( 50 );
     const [ show, setShow ] = useState(true);
     
     const memoProcesoPesado = useMemo(() => procesoPesado(counter), [ counter ]);
