@@ -21,7 +21,7 @@ console.log(author,quote)
               </div>
         )
       }
-      <button onClick={()=>setCounter(counter+1)}>Next</button>
+      <button onClick={increment}>Next</button>
      
     </>  
   )
