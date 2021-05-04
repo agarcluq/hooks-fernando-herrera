@@ -6,7 +6,8 @@ const FocusScreen = () => {
     // console.log(inputRef);
 
     const handleClick = () => {
-        inputRef.current.select();
+        inputRef.current.select(); 
+        //selecciona el input actual
         console.log(inputRef);
     }
 
