@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { ShowIncrement } from './ShowIncrement';
+import ShowIncrement  from './ShowIncrement';
 
 
-export const CallbackHook = () => {
+const CallbackHook = () => {
 
     const [counter, setCounter] = useState( 10 );
 
@@ -30,3 +30,4 @@ export const CallbackHook = () => {
         </div>
     )
 }
+export default CallbackHook;
