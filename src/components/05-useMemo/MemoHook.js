@@ -1,13 +1,15 @@
 import React, { useState, useMemo } from 'react';
-import { useCouter } from '../../hooks/useCouter';
-import { procesoPesado } from '../../helpers/procesoPesado';
+import  useCounter  from '../../hooks/useCounter';
+import  procesoPesado  from '../../helpers/procesoPesado';
 
-export const MemoHook = () => {
+const MemoHook = () => {
 
-    const { counter, increment } =  useCouter( 5000 );
+    const { counter, increment } =  useCounter( 5000 );
     const [ show, setShow ] = useState(true);
     
     const memoProcesoPesado = useMemo(() => procesoPesado(counter), [ counter ]);
+    //la función como parametro, y cuanto tengo que volver a almacenar esa función
+
 
 
     return (
@@ -37,3 +39,4 @@ export const MemoHook = () => {
         </div>
     )
 }
+export default MemoHook;
