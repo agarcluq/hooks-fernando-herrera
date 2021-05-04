@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{memo} from 'react'
 
-const ShowIncrement = React.memo(({ increment }) => {
+const ShowIncrement = memo(({ increment }) => {
 
     console.log(' Me volví a generar :( ');
 
