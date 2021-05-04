@@ -26,6 +26,12 @@ const handleSubmit = (e) => {
   return (
     <>
       <h1>FormWithCustomHooks</h1>
+      <div>
+      {formValues.map((item,i)=>(
+        <p key={i} item={item}>{item}</p>
+      )
+      )}
+      </div>
       <hr/>
       <form onSubmit={ handleSubmit }>
         <input 
