@@ -4,14 +4,14 @@ const useCounter = (initialState = 10) =>{
 const [counter,setCounter] = useState(initialState)
 
 const increment = () => {
-  setState(state + 1)
+  setCounter(counter + 1)
 }
 
 const decrement = () => {
-  setState(state - 1)
+ setCounter(counter - 1)
 }
 const reset = () => {
-  setState(initialState)
+  setCounter(initialState)
 }
 return {
   counter,
