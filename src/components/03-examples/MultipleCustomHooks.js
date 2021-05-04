@@ -2,11 +2,22 @@ import React,{useEffect,useState} from "react";
 import useFetch from "../../hooks/useFetch";
 
 const MultipleCustomHooks = () => {
-const state = useFetch(`https://www.breakingbadapi.com/api/quotes/1`);
-
+const {loading} = useFetch(`https://www.breakingbadapi.com/api/quotes/1`);
+console.log(loading)
   return (
     <>
-      <h2>MultipleCustomHooks</h2>
+      <h1>CreakingBad Quotes</h1>
+  {
+    loading 
+    ? (<div>Loading ...</div>)
+    :(
+          <div>
+            <p>Hola mundo</p>
+            <small>- Fernando</small>
+          </div>
+    )
+  }
+     
 
     </>  
   )
